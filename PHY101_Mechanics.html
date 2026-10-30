@@ -1,0 +1,861 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PHY101 | Unit I: Mechanics</title>
+
+<style>
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f3f5f9;
+    color: #263238;
+    line-height: 1.7;
+}
+header {
+    background: linear-gradient(120deg, #102a43, #246b83);
+    color: white;
+    padding: 55px 20px;
+    text-align: center;
+}
+header h1 {
+    font-size: 38px;
+    margin-bottom: 8px;
+}
+header p {
+    margin: 5px;
+}
+nav {
+    background: #173f5f;
+    padding: 12px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 8px;
+    display: inline-block;
+    font-size: 14px;
+}
+nav a:hover {
+    color: #ffd166;
+}
+.container {
+    max-width: 1050px;
+    margin: auto;
+    padding: 20px;
+}
+section {
+    background: white;
+    margin: 22px 0;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px #0000000c;
+}
+h2 {
+    color: #176b87;
+    border-bottom: 2px solid #dce8ee;
+    padding-bottom: 10px;
+}
+h3 {
+    color: #28536b;
+    margin-top: 25px;
+}
+.formula {
+    background: #eaf4f7;
+    border-left: 4px solid #176b87;
+    padding: 13px;
+    margin: 12px 0;
+    font-size: 17px;
+    font-weight: bold;
+}
+.example {
+    background: #f5f8fa;
+    padding: 15px;
+    border-radius: 8px;
+    margin: 15px 0;
+}
+.note {
+    background: #fff7e6;
+    border-left: 4px solid #e6a23c;
+    padding: 12px;
+    margin: 15px 0;
+}
+svg {
+    display: block;
+    max-width: 100%;
+    margin: 20px auto;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 15px 0;
+}
+th, td {
+    border: 1px solid #d5dfe5;
+    padding: 10px;
+    text-align: left;
+}
+th {
+    background: #eaf4f7;
+}
+footer {
+    background: #173f5f;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    margin-top: 30px;
+}
+button {
+    background: #176b87;
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+button:hover {
+    background: #104b61;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>PHY101: Fundamentals of Physics</h1>
+    <h2 style="color:white;border:none">Unit I – Mechanics</h2>
+    <p>Digital Learning Portfolio</p>
+    <p>Understanding motion, forces, energy and momentum</p>
+    <p>Student: Kinley Tashi Tobgyel</p>
+    <p>Programme: BSc Chemistry</p>
+</header>
+
+<nav>
+    <a href="#intro">Introduction</a>
+    <a href="#kinematics">Kinematics</a>
+    <a href="#forces">Force and Motion</a>
+    <a href="#friction">Friction</a>
+    <a href="#energy">Work and Energy</a>
+    <a href="#momentum">Momentum</a>
+    <a href="#reflection">Reflection</a>
+    <a href="#quiz">Quiz</a>
+</nav>
+
+<div class="container">
+
+<section id="intro">
+<h2>Introduction to Mechanics</h2>
+
+<p>
+Mechanics is a branch of physics that deals with the motion of
+objects and the forces responsible for producing or changing
+that motion. It helps us understand how objects move, why they
+stop, and how energy and momentum are transferred.
+</p>
+
+<h3>Importance of Mechanics</h3>
+<ul>
+<li>Helps explain the motion of everyday objects.</li>
+<li>Provides the foundation for engineering and technology.</li>
+<li>Explains the movement of vehicles and machines.</li>
+<li>Helps us understand energy transfer and collisions.</li>
+<li>Has applications in laboratory experiments and scientific research.</li>
+</ul>
+
+<h3>Main Topics in This Unit</h3>
+<ol>
+<li>Kinematics using calculus</li>
+<li>Force and motion in inertial frames</li>
+<li>Friction and air resistance</li>
+<li>Work-energy theorem and applications</li>
+<li>Impulse and conservation of momentum in collisions</li>
+</ol>
+</section>
+
+<section id="kinematics">
+<h2>1. Kinematics Using Calculus</h2>
+
+<p>
+Kinematics is the branch of mechanics that describes the motion
+of objects without considering the forces causing the motion.
+It studies displacement, velocity and acceleration.
+</p>
+
+<h3>1.1 Position and Displacement</h3>
+<p>
+Position describes the location of an object relative to a
+reference point. Displacement is the change in position of
+an object in a particular direction.
+</p>
+
+<div class="formula">
+Displacement: Δx = x₂ − x₁
+</div>
+
+<p>
+Displacement is a vector quantity because it has both magnitude
+and direction.
+</p>
+
+<h3>1.2 Distance and Displacement</h3>
+<table>
+<tr><th>Distance</th><th>Displacement</th></tr>
+<tr><td>Total path travelled.</td><td>Change in position.</td></tr>
+<tr><td>Scalar quantity.</td><td>Vector quantity.</td></tr>
+<tr><td>Always zero or positive.</td><td>Can be positive, negative or zero in one dimension.</td></tr>
+</table>
+
+<h3>1.3 Velocity</h3>
+<p>
+Velocity is the rate of change of displacement with respect
+to time.
+</p>
+
+<div class="formula">
+Average velocity = Displacement / Time
+</div>
+
+<div class="formula">
+Instantaneous velocity: v = dx/dt
+</div>
+
+<p>
+In calculus, velocity is obtained by differentiating the
+position function with respect to time.
+</p>
+
+<h3>1.4 Acceleration</h3>
+<p>
+Acceleration is the rate of change of velocity with respect
+to time.
+</p>
+
+<div class="formula">
+Average acceleration = (v₂ − v₁) / (t₂ − t₁)
+</div>
+
+<div class="formula">
+Instantaneous acceleration: a = dv/dt = d²x/dt²
+</div>
+
+<h3>1.5 Motion Equations</h3>
+<p>For motion with constant acceleration:</p>
+
+<div class="formula">v = u + at</div>
+<div class="formula">s = ut + ½at²</div>
+<div class="formula">v² = u² + 2as</div>
+<div class="formula">s = (u + v)t / 2</div>
+
+<p>Where:</p>
+<ul>
+<li>u = Initial velocity</li>
+<li>v = Final velocity</li>
+<li>a = Acceleration</li>
+<li>t = Time</li>
+<li>s = Displacement</li>
+</ul>
+
+<h3>1.6 Worked Example</h3>
+<div class="example">
+<b>Question:</b> A car starts from rest and accelerates uniformly
+at 2 m/s² for 5 seconds. Find its final velocity.
+
+<p><b>Given:</b></p>
+u = 0 m/s, a = 2 m/s², t = 5 s
+
+<p><b>Formula:</b></p>
+v = u + at
+
+<p><b>Substitution:</b></p>
+v = 0 + (2 × 5)
+
+<p><b>Answer:</b></p>
+v = 10 m/s
+</div>
+
+<h3>1.7 Position-Time Graph</h3>
+<p>
+The slope of a position-time graph represents velocity.
+A steeper slope indicates a greater speed.
+</p>
+
+<svg viewBox="0 0 500 280" role="img">
+<line x1="65" y1="225" x2="450" y2="225" stroke="#263238" stroke-width="2"/>
+<line x1="65" y1="225" x2="65" y2="25" stroke="#263238" stroke-width="2"/>
+<line x1="65" y1="225" x2="390" y2="55" stroke="#176b87" stroke-width="4"/>
+<text x="440" y="248" font-size="14">Time</text>
+<text x="12" y="25" font-size="14">Position</text>
+<text x="300" y="90" fill="#176b87" font-size="14">Constant velocity</text>
+</svg>
+
+<div class="note">
+<b>Key idea:</b> Differentiation helps us obtain velocity from
+position and acceleration from velocity.
+</div>
+</section>
+
+<section id="forces">
+<h2>2. Force and Motion in Inertial Frames</h2>
+
+<p>
+Force is a push or pull that can change the state of motion
+or the shape of an object. Newton's laws explain the
+relationship between force and motion.
+</p>
+
+<h3>2.1 Inertial Frame of Reference</h3>
+<p>
+An inertial frame is a reference frame that is at rest or
+moving with constant velocity. Newton's laws of motion are
+valid in such a frame without introducing fictitious forces.
+</p>
+
+<h3>2.2 Newton's First Law</h3>
+<p>
+An object remains at rest or continues moving with uniform
+velocity in a straight line unless acted upon by a net
+external force.
+</p>
+
+<div class="formula">
+ΣF = 0 → Constant velocity
+</div>
+
+<p>
+This law is also called the law of inertia.
+</p>
+
+<h3>2.3 Newton's Second Law</h3>
+<p>
+The acceleration of an object is directly proportional to
+the net force acting on it and inversely proportional to
+its mass.
+</p>
+
+<div class="formula">
+ΣF = ma
+</div>
+
+<p>
+Where F is force in newtons, m is mass in kilograms and
+a is acceleration in m/s².
+</p>
+
+<h3>2.4 Newton's Third Law</h3>
+<p>
+For every action, there is an equal and opposite reaction.
+These forces act on different objects.
+</p>
+
+<div class="example">
+<b>Example:</b> When a person walks, the foot pushes the ground
+backward. The ground exerts a forward frictional force on
+the person, helping them move forward.
+</div>
+
+<h3>2.5 Free-Body Diagram</h3>
+<p>
+A free-body diagram represents all the external forces acting
+on a selected object.
+</p>
+
+<svg viewBox="0 0 500 300" role="img">
+<rect x="190" y="105" width="100" height="75" rx="5" fill="#d9edf4" stroke="#176b87" stroke-width="2"/>
+<line x1="240" y1="105" x2="240" y2="35" stroke="#c0392b" stroke-width="3"/>
+<polygon points="240,25 233,40 247,40" fill="#c0392b"/>
+<text x="255" y="45" font-size="15">Normal force (N)</text>
+<line x1="240" y1="180" x2="240" y2="255" stroke="#c0392b" stroke-width="3"/>
+<polygon points="240,265 233,250 247,250" fill="#c0392b"/>
+<text x="255" y="260" font-size="15">Weight (mg)</text>
+<line x1="190" y1="142" x2="95" y2="142" stroke="#176b87" stroke-width="3"/>
+<polygon points="85,142 100,135 100,149" fill="#176b87"/>
+<text x="15" y="125" font-size="14">Friction</text>
+<line x1="290" y1="142" x2="390" y2="142" stroke="#176b87" stroke-width="3"/>
+<polygon points="400,142 385,135 385,149" fill="#176b87"/>
+<text x="340" y="125" font-size="14">Applied force</text>
+<line x1="60" y1="190" x2="440" y2="190" stroke="#555" stroke-width="2"/>
+</svg>
+
+<h3>2.6 Worked Example</h3>
+<div class="example">
+<b>Question:</b> A 5 kg object experiences a net force of
+20 N. Find its acceleration.
+
+<b>Formula:</b>
+a = F/m
+
+<b>Substitution:</b>
+a = 20/5
+
+<b>Answer:</b>
+a = 4 m/s²
+</div>
+</section>
+
+<section id="friction">
+<h2>3. Friction and Air Resistance</h2>
+
+<p>
+Friction is a force that opposes the relative motion or
+tendency of motion between two surfaces in contact.
+It acts parallel to the surfaces.
+</p>
+
+<h3>3.1 Types of Friction</h3>
+<table>
+<tr><th>Type</th><th>Explanation</th></tr>
+<tr><td>Static friction</td><td>Prevents an object from starting to slide.</td></tr>
+<tr><td>Kinetic friction</td><td>Acts when surfaces slide against each other.</td></tr>
+<tr><td>Rolling friction</td><td>Opposes the rolling motion of an object.</td></tr>
+</table>
+
+<h3>3.2 Static Friction</h3>
+<p>
+Static friction adjusts its magnitude to prevent sliding,
+up to a maximum value.
+</p>
+
+<div class="formula">
+fₛ ≤ μₛN
+</div>
+
+<h3>3.3 Kinetic Friction</h3>
+<p>
+Kinetic friction acts when an object is sliding over a surface.
+</p>
+
+<div class="formula">
+fₖ = μₖN
+</div>
+
+<p>
+Where μ is the coefficient of friction and N is the normal
+reaction force.
+</p>
+
+<h3>3.4 Air Resistance</h3>
+<p>
+Air resistance is a force that opposes the motion of an
+object moving through air. It is also known as drag.
+</p>
+
+<p>
+The magnitude of drag depends on factors such as speed,
+shape, size and properties of the surrounding air.
+</p>
+
+<h3>3.5 Terminal Velocity</h3>
+<p>
+When an object falls through air, its speed increases and
+air resistance generally increases. Eventually, the drag
+force balances the object's weight. The net force becomes
+zero, and the object continues falling at constant velocity.
+This is called terminal velocity.
+</p>
+
+<div class="formula">
+At terminal velocity: Weight = Air resistance
+</div>
+
+<h3>3.6 Worked Example</h3>
+<div class="example">
+<b>Question:</b> A 10 kg box rests on a horizontal surface.
+The coefficient of kinetic friction is 0.2. Find the
+kinetic frictional force. Take g = 9.8 m/s².
+
+<b>Step 1:</b>
+N = mg = 10 × 9.8 = 98 N
+
+<b>Step 2:</b>
+fₖ = μₖN
+
+fₖ = 0.2 × 98
+
+<b>Answer:</b>
+fₖ = 19.6 N
+</div>
+
+<div class="note">
+<b>Application:</b> Friction allows vehicles to move, helps
+people walk and provides grip between objects.
+However, excessive friction can cause energy loss and wear.
+</div>
+</section>
+
+<section id="energy">
+<h2>4. Work-Energy Theorem and Applications</h2>
+
+<p>
+Work is done when a force causes displacement of an object.
+Energy is the capacity to do work.
+</p>
+
+<h3>4.1 Work Done</h3>
+<p>
+When a constant force acts on an object and produces
+displacement, work is calculated using:
+</p>
+
+<div class="formula">
+W = Fs cos θ
+</div>
+
+<p>
+Where F is force, s is displacement and θ is the angle
+between force and displacement.
+</p>
+
+<h3>4.2 Types of Work</h3>
+<ul>
+<li><b>Positive work:</b> Force and displacement act in the same general direction.</li>
+<li><b>Negative work:</b> Force acts opposite to displacement.</li>
+<li><b>Zero work:</b> No displacement occurs, or the force is perpendicular to displacement.</li>
+</ul>
+
+<h3>4.3 Kinetic Energy</h3>
+<p>
+Kinetic energy is the energy possessed by an object due
+to its motion.
+</p>
+
+<div class="formula">
+KE = ½mv²
+</div>
+
+<h3>4.4 Potential Energy</h3>
+<p>
+Gravitational potential energy is the energy an object
+possesses because of its position or height.
+</p>
+
+<div class="formula">
+PE = mgh
+</div>
+
+<h3>4.5 Work-Energy Theorem</h3>
+<p>
+The net work done on an object is equal to the change in
+its kinetic energy.
+</p>
+
+<div class="formula">
+Wnet = ΔKE = KEfinal − KEinitial
+</div>
+
+<h3>4.6 Conservation of Mechanical Energy</h3>
+<p>
+When only conservative forces act, the total mechanical
+energy remains constant.
+</p>
+
+<div class="formula">
+KE + PE = Constant
+</div>
+
+<h3>4.7 Energy Transformation</h3>
+<p>
+Energy can change from one form to another. For example,
+when a roller coaster moves down a track, gravitational
+potential energy decreases while kinetic energy increases.
+</p>
+
+<svg viewBox="0 0 500 250" role="img">
+<path d="M35 190 Q100 10 185 150 T450 155" fill="none" stroke="#176b87" stroke-width="5"/>
+<circle cx="85" cy="105" r="13" fill="#e6a23c"/>
+<circle cx="380" cy="155" r="13" fill="#e6a23c"/>
+<text x="35" y="30" font-size="14">Higher position</text>
+<text x="340" y="215" font-size="14">Lower position</text>
+<text x="25" y="235" font-size="12">Potential energy is converted into kinetic energy as the coaster descends.</text>
+</svg>
+
+<h3>4.8 Worked Example</h3>
+<div class="example">
+<b>Question:</b> A 2 kg object is lifted to a height of 5 m.
+Calculate its gravitational potential energy. Take g = 9.8 m/s².
+
+<b>Formula:</b>
+PE = mgh
+
+<b>Substitution:</b>
+PE = 2 × 9.8 × 5
+
+<b>Answer:</b>
+PE = 98 J
+</div>
+
+<h3>4.9 Power</h3>
+<p>
+Power is the rate at which work is done or energy is transferred.
+</p>
+
+<div class="formula">
+P = W/t
+</div>
+
+<p>SI unit: Watt (W).</p>
+</section>
+
+<section id="momentum">
+<h2>5. Impulse and Conservation of Momentum in Collisions</h2>
+
+<h3>5.1 Momentum</h3>
+<p>
+Momentum is the product of the mass and velocity of an object.
+It is a vector quantity.
+</p>
+
+<div class="formula">
+p = mv
+</div>
+
+<p>SI unit: kg m/s.</p>
+
+<h3>5.2 Impulse</h3>
+<p>
+Impulse is the change in momentum of an object. It is
+produced when a force acts over a period of time.
+</p>
+
+<div class="formula">
+J = FΔt = Δp
+</div>
+
+<h3>5.3 Conservation of Momentum</h3>
+<p>
+The law of conservation of momentum states that the total
+momentum of an isolated system remains constant if the
+net external force acting on the system is zero.
+</p>
+
+<div class="formula">
+Total momentum before collision = Total momentum after collision
+</div>
+
+<div class="formula">
+m₁u₁ + m₂u₂ = m₁v₁ + m₂v₂
+</div>
+
+<h3>5.4 Types of Collisions</h3>
+<table>
+<tr><th>Elastic collision</th><th>Inelastic collision</th></tr>
+<tr>
+<td>Momentum and total kinetic energy are conserved.</td>
+<td>Momentum is conserved, but kinetic energy is not conserved.</td>
+</tr>
+<tr>
+<td>Objects may separate after collision.</td>
+<td>Some kinetic energy changes into other forms.</td>
+</tr>
+</table>
+
+<h3>5.5 Perfectly Inelastic Collision</h3>
+<p>
+In a perfectly inelastic collision, the two objects stick
+together after collision and move with a common velocity.
+Momentum is conserved, but kinetic energy is not.
+</p>
+
+<div class="formula">
+v = (m₁u₁ + m₂u₂) / (m₁ + m₂)
+</div>
+
+<h3>5.6 Worked Example</h3>
+<div class="example">
+<b>Question:</b> A 2 kg trolley moving at 4 m/s collides
+with a stationary 2 kg trolley. They stick together.
+Find their common velocity.
+
+<b>Given:</b>
+m₁ = 2 kg, u₁ = 4 m/s
+
+m₂ = 2 kg, u₂ = 0 m/s
+
+<b>Formula:</b>
+v = (m₁u₁ + m₂u₂)/(m₁ + m₂)
+
+<b>Substitution:</b>
+v = (2 × 4 + 2 × 0)/(2 + 2)
+
+v = 8/4
+
+<b>Answer:</b>
+v = 2 m/s
+</div>
+
+<h3>5.7 Applications of Momentum</h3>
+<ul>
+<li>Vehicle collisions and safety systems.</li>
+<li>Rocket propulsion.</li>
+<li>Sports involving balls and moving objects.</li>
+<li>Recoil and motion of objects.</li>
+<li>Air-track collision experiments in physics laboratories.</li>
+</ul>
+</section>
+
+<section id="critical">
+<h2>Critical Thinking and Real-Life Applications</h2>
+
+<h3>1. Why do passengers move forward when a bus suddenly stops?</h3>
+<p>
+Because of inertia. The passenger's body tends to continue
+moving forward even when the bus slows down. This demonstrates
+Newton's first law of motion.
+</p>
+
+<h3>2. Why are vehicle tyres designed with grooves?</h3>
+<p>
+Grooves help improve grip by allowing water to move away
+from the contact area between the tyre and road. This helps
+reduce the risk of losing traction.
+</p>
+
+<h3>3. Why does a parachute reduce the speed of a falling person?</h3>
+<p>
+A parachute increases the surface area exposed to air.
+This increases drag and reduces the terminal velocity.
+</p>
+
+<h3>4. Why do airbags help protect passengers?</h3>
+<p>
+Airbags increase the time over which a passenger's momentum
+changes during a collision. For a similar change in momentum,
+increasing the time reduces the average force.
+</p>
+
+<h3>5. Why does a moving object eventually stop on a rough surface?</h3>
+<p>
+Friction acts opposite to the direction of motion. It transfers
+mechanical energy into thermal energy, causing the object to
+slow down and eventually stop.
+</p>
+</section>
+
+<section id="reflection">
+<h2>Learning Reflection</h2>
+
+<p>
+Through this unit, I developed a better understanding of the
+basic principles of mechanics. I learned how calculus is used
+to describe motion through position, velocity and acceleration.
+I also understood how Newton's laws explain the relationship
+between force and motion.
+</p>
+
+<p>
+The topics of friction, air resistance, work and energy helped
+me connect physics concepts with everyday experiences.
+I found the conservation of momentum particularly interesting
+because it explains what happens during collisions.
+</p>
+
+<p>
+Some concepts and numerical problems required more attention,
+especially when selecting the correct formula and applying
+the given values. Working through examples helped me improve
+my understanding and problem-solving skills.
+</p>
+
+<p>
+Overall, this unit helped me recognise that mechanics is not
+only theoretical but also important in understanding real-life
+situations and scientific applications.
+</p>
+
+</section>
+
+<section id="quiz">
+<h2>Self-Assessment Quiz</h2>
+<p>Test your understanding of Unit I: Mechanics.</p>
+
+<form id="quizForm">
+
+<p><b>1. What is the SI unit of force?</b></p>
+<label><input type="radio" name="q1" value="a"> Joule</label><br>
+<label><input type="radio" name="q1" value="b"> Newton</label><br>
+<label><input type="radio" name="q1" value="c"> Watt</label><br>
+
+<p><b>2. Which law is known as the law of inertia?</b></p>
+<label><input type="radio" name="q2" value="a"> Newton's first law</label><br>
+<label><input type="radio" name="q2" value="b"> Newton's second law</label><br>
+<label><input type="radio" name="q2" value="c"> Newton's third law</label><br>
+
+<p><b>3. What is the formula for kinetic energy?</b></p>
+<label><input type="radio" name="q3" value="a"> mgh</label><br>
+<label><input type="radio" name="q3" value="b"> mv</label><br>
+<label><input type="radio" name="q3" value="c"> ½mv²</label><br>
+
+<p><b>4. What does friction oppose?</b></p>
+<label><input type="radio" name="q4" value="a"> Relative motion or its tendency</label><br>
+<label><input type="radio" name="q4" value="b"> Mass</label><br>
+<label><input type="radio" name="q4" value="c"> Gravity only</label><br>
+
+<p><b>5. What is conserved in an isolated collision system?</b></p>
+<label><input type="radio" name="q5" value="a"> Temperature</label><br>
+<label><input type="radio" name="q5" value="b"> Momentum</label><br>
+<label><input type="radio" name="q5" value="c"> Speed of every object</label><br>
+
+<br>
+<button type="button" onclick="checkAnswers()">Submit Answers</button>
+<button type="reset" onclick="document.getElementById('result').innerHTML=''">Reset</button>
+</form>
+
+<h3 id="result"></h3>
+
+<script>
+function checkAnswers() {
+    const answers = {
+        q1: "b",
+        q2: "a",
+        q3: "c",
+        q4: "a",
+        q5: "b"
+    };
+
+    let score = 0;
+    let total = Object.keys(answers).length;
+
+    for (let q in answers) {
+        let selected = document.querySelector(
+            'input[name="' + q + '"]:checked'
+        );
+        if (selected && selected.value === answers[q]) {
+            score++;
+        }
+    }
+
+    document.getElementById("result").innerHTML =
+        "Your score: " + score + " / " + total;
+}
+</script>
+</section>
+
+<section id="references">
+<h2>References</h2>
+<ul>
+<li>Halliday, D., Resnick, R., & Walker, J. Fundamentals of Physics.</li>
+<li>OpenStax. University Physics, Volume 1. https://openstax.org/details/books/university-physics-volume-1</li>
+<li>The Physics Classroom. https://www.physicsclassroom.com/</li>
+<li>Class notes and PHY101 learning materials.</li>
+</ul>
+</section>
+
+</div>
+
+<footer>
+<p>PHY101 – Fundamentals of Physics</p>
+<p>Unit I: Mechanics | Digital Learning Portfolio</p>
+<p>Learning through concepts, examples and applications.</p>
+</footer>
+
+</body>
+</html>
